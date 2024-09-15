@@ -33,7 +33,6 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
-
 <body class="sub_page">
 
   <div class="hero_area">
@@ -87,159 +86,282 @@
     </header>
     <!-- end header section -->
   </div>
-  
-    <!-- start price section-->
-  <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="heading_container heading_center">
-        <h2>
-          Prices
-        </h2>
+  <style>
+
+    .h22 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ffffff;
+    }
+
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax for smaller screen widths */
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      border: 2px solid #008cba;
+    }
+
+    .card h3 {
+      color: #008cba;
+      margin-bottom: 20px;
+    }
+
+    .card h4 {
+      font-size: 2.5rem;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .card ul li {
+      color: #000000;
+      padding: 10px;
+      border-bottom: 1px solid #ffffff;
+      font-size: 1rem;
+    }
+
+    .card button {
+      background-color: #008cba;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #005f8a;
+    }
+
+    @media (max-width: 768px) {
+  .card h4 {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .card ul li {
+    font-size: 0.85rem; /* Slightly smaller text in the list items */
+  }
+
+  .card {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .card h4 {
+    font-size: 1.5rem; /* Smaller font size for extra small screens */
+  }
+
+  .card ul li {
+    font-size: 0.75rem; /* Further reduce list item font size */
+  }
+
+  .card {
+    padding: 10px; /* Further reduce padding on extra small screens */
+  }
+}
+  </style>
+</head>
+<!-- start price section-->
+<section class="about_section layout_padding">
+  <div class="container  ">
+    <div class="heading_container heading_center">
+  <div class="container">
+    <div class="h22">
+    <h2>Our Pricing Plans</h2>
+  </div>
+    <div class="pricing-cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <h3>Custom Website</h3>
+        <h4>Rs. 5999</h4>
+        <p>Includes Hosting & Domain</p>
+        <ul>
+          <li>Responsive Design</li>
+          <li>1 Year Hosting</li>
+          <li>1 Year Domain</li>
+          <li>Free SSL</li>
+        </ul>
+        <button>Choose Plan</button>
       </div>
-            <h3>
-             Custom website
-            </h3>
-            <ul>
-                <li>Rs.5999</li> Including hosting and domain
-            </ul>
-            <h3>
-                Google reviews
-            </h3>
-            <ul>
-                <li>Rs.999</li> Instant result
-            </ul>
-            <h3>
-                Business analysis
-            </h3>
-                <ul>
-                    <li>Rs.999</li>
-                </ul>
-          </div>
-  </section>
 
-  <!-- end price section -->
-   
-  <!-- info section -->
+      <!-- Card 2 -->
+      <div class="card">
+        <h3>Google Reviews</h3>
+        <h4>Rs. 999</h4>
+        <p>Instant Results</p>
+        <ul>
+          <li>Increase visibility</li>
+          <li>Real Reviews</li>
+          <li>Boost Local SEO</li>
+          <li>100% Safe</li>
+        </ul>
+        <button>Choose Plan</button>
+      </div>
 
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Contact
-            </h4>
-            <div class="contact_link_box">
-              <a href="https://www.google.com/maps/place/Radio+Nepal+Tower/@27.6470637,85.3036455,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1784d0b7d48f:0x4122a2668f2c4c1c!8m2!3d27.647059!4d85.3062204!16s%2Fg%2F11f_j3d5w1?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> 
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +9841047588 
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  sahajkarki326@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              Best nepali website making company.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
+      <!-- Card 3 -->
+      <div class="card">
+        <h3>Business Analysis</h3>
+        <h4>Rs. 999</h4>
+        <p>Expert Insights</p>
+        <ul>
+          <li>Market Analysis</li>
+          <li>Competitor Study</li>
+          <li>Strategy Plan</li>
+          <li>Free Consultation</li>
+        </ul>
+        <button>Choose Plan</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- end price section -->
+ <!-- info section -->
+
+ <section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 info_col">
+        <div class="info_contact">
           <h4>
-            Subscribe
+            Contact
           </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
+          <div class="contact_link_box">
+            <a href="https://www.google.com/maps/place/Radio+Nepal+Tower/@27.6470637,85.3036455,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1784d0b7d48f:0x4122a2668f2c4c1c!8m2!3d27.647059!4d85.3062204!16s%2Fg%2F11f_j3d5w1?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> 
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call +9841047588 
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                sahajkarki326@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="info_social">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
+      <div class="col-md-6 col-lg-3 info_col">
+        <div class="info_detail">
+          <h4>
+            Info
+          </h4>
+          <p>
+            Best nepali website making company.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-2 mx-auto info_col">
+        <div class="info_link_box">
+          <h4>
+            Links
+          </h4>
+          <div class="info_links">
+            <a class="active" href="index.html">
+              Home
+            </a>
+            <a class="" href="about.html">
+              About
+            </a>
+            <a class="" href="service.html">
+              Services
+            </a>
+            <a class="" href="why.html">
+              Why Us
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 info_col ">
+        <h4>
+          Subscribe
+        </h4>
+        <form action="#">
+          <input type="text" placeholder="Enter email" />
+          <button type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- end info section -->
+<!-- end info section -->
 
-  <!-- footer section -->
-  <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Websewa</a>
-      </p>
-    </div>
-  </section>
-  <!-- footer section -->
+<!-- footer section -->
+<section class="footer_section">
+  <div class="container">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      <a href="https://html.design/">Websewa</a>
+    </p>
+  </div>
+</section>
+<!-- footer section -->
 
-  <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+<!-- jQery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- popper js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<!-- bootstrap js -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- owl slider -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+</script>
+<!-- custom js -->
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+</script>
+<!-- End Google Map -->
 
 </body>
 
